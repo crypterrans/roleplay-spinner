@@ -1,76 +1,68 @@
 {
-  "Elementary": {
-    "Characters": [
-      "A friendly alien", "A talking dog", "A brave astronaut", "A magical wizard",
-      "A hungry dinosaur", "A clever detective", "A sleepy bear", "A speedy superhero",
-      "A kind teacher", "A mischievous monkey", "A lost penguin", "A singing mermaid",
-      "A robot who wants to be human", "A pirate looking for treasure", "A ninja in training",
-      "A talking tree", "A curious cat"
-    ],
-    "Settings": [
-      "A spaceship", "A magical forest", "A giant castle", "A busy zoo",
-      "An underwater city", "A secret cave", "A sunny beach", "A treehouse",
-      "A candy factory", "A snowy mountain", "A deserted island", "A floating island in the sky",
-      "A time machine", "A bustling playground", "A hidden garden", "A moon base",
-      "A pirate ship"
-    ],
-    "Conflicts": [
-      "Lost their favorite toy", "Can't find the way home", "Accidentally broke something",
-      "Needs to win a race", "Found a mysterious map", "Trying to reach a high shelf",
-      "Needs help baking a cake", "Trying to wake up a sleepy friend", "Lost their magical powers",
-      "Trying to catch a fast bug", "Needs to build a shelter", "Forgot the password",
-      "Trying to make a new friend", "Scared of the dark", "Trying to cross a river",
-      "Needs to solve a riddle", "Trying to stop a funny hiccup"
-    ]
-  },
-  "Middle School": {
-    "Characters": [
-      "A secret agent", "A young inventor", "A time traveler", "A famous pop star",
-      "A strict principal", "A misunderstood villain", "A sports champion", "A brilliant scientist",
-      "A rookie reporter", "A ghost from the 1800s", "An exchange student from Mars",
-      "A video game character brought to life", "A master thief", "A superhero without powers",
-      "A chef competing in a contest", "A wildlife documentary filmmaker", "A historical figure in the present"
-    ],
-    "Settings": [
-      "A high-tech laboratory", "An abandoned amusement park", "A haunted mansion",
-      "A busy airport", "A virtual reality game", "A crowded shopping mall", "A summer camp",
-      "A space station", "A submarine deep underwater", "A famous museum after hours",
-      "A movie set", "A survival island", "A futuristic city", "An underground bunker",
-      "A magical library", "A school during a blackout", "A concert backstage"
-    ],
-    "Conflicts": [
-      "Discovered a huge secret", "Accidentally swapped bodies", "Needs to defuse a harmless prank bomb",
-      "Trying to escape a locked room", "Lost the winning lottery ticket", "Framed for a crime",
-      "Trying to win a massive competition", "Trapped in a video game", "Trying to find a cure for a weird sickness",
-      "Trying to stop a rumor", "Lost in an unfamiliar city", "Trying to protect a rare animal",
-      "Trying to survive without electricity", "Needs to win back a best friend", "Trying to break a curse",
-      "Trying to get the perfect photo", "Trying to hide a pet alien"
-    ]
-  },
-  "High School": {
-    "Characters": [
-      "A stressed out senior", "An ambitious politician", "A cynical detective", "A wealthy CEO",
-      "A struggling artist", "A brilliant hacker", "An alien undercover as a student",
-      "A renowned chef", "An investigative journalist", "A spy on their last mission",
-      "A professional gamer", "A philosophical AI", "A renowned fashion designer",
-      "A survivor of a dystopian future", "An eccentric billionaire", "A disillusioned hero",
-      "A charismatic cult leader"
-    ],
-    "Settings": [
-      "A high-stakes courtroom", "A remote cabin in the woods", "A bustling newsroom",
-      "A fancy gala", "An international space station", "A dystopian megacity",
-      "A cross-country road trip", "A high-security prison", "A deserted highway diner at 3 AM",
-      "A luxury yacht in a storm", "A highly classified military base", "A chaotic stock exchange floor",
-      "An underwater research facility", "An ancient archaeological dig", "A prestigious university campus",
-      "A corporate boardroom", "A quiet suburban neighborhood with a dark secret"
-    ],
-    "Conflicts": [
-      "Blackmailed with a secret", "Trying to expose corruption", "Trapped with an enemy",
-      "Trying to survive a natural disaster", "Forced to choose between love and career",
-      "Accidentally witnessed a crime", "Trying to clear their name", "Navigating a complex moral dilemma",
-      "Trying to pull off a heist", "Dealing with a betrayal", "Trying to negotiate a hostage situation",
-      "Trying to win a high-stakes bet", "Facing an existential crisis", "Trying to uncover a conspiracy",
-      "Trying to survive a zombie outbreak", "Dealing with a difficult client", "Trying to launch a revolutionary product"
-    ]
-  }
+  "Elementary": [
+    {
+      "Theme": "School & Neighborhood",
+      "Characters": ["Teacher", "Librarian", "Bus Driver", "Mail Carrier", "Police Officer", "Dentist"],
+      "Settings": ["School", "Library", "Playground", "Post Office", "Park", "Toy Store"],
+      "Conflicts": ["Forgot homework", "Broke a pencil", "Forgot a lunchbox", "Missed the bus", "Lost a tooth", "Ripped a shirt", "Tripped on a shoelace"]
+    },
+    {
+      "Theme": "Emergencies & Medical",
+      "Characters": ["Police Officer", "Doctor", "Firefighter", "Dentist", "Teacher"],
+      "Settings": ["Hospital", "Park", "School", "Playground"],
+      "Conflicts": ["Scraped a knee", "Lost a tooth", "Scared of the dark", "Lost a dog", "Stuck in a tree"]
+    },
+    {
+      "Theme": "Food & Animals",
+      "Characters": ["Farmer", "Chef", "Zookeeper", "Baker", "Clown"],
+      "Settings": ["Farm", "Kitchen", "Zoo", "Bakery", "Pet Shop", "Circus"],
+      "Conflicts": ["Spilled milk", "Dropped ice cream", "Scared of a bug", "Lost a dog", "Cannot find a toy"]
+    },
+    {
+      "Theme": "Travel & Adventure",
+      "Characters": ["Astronaut", "Pilot", "Bus Driver", "Mail Carrier"],
+      "Settings": ["Space Station", "Airplane", "Airport", "Playground"],
+      "Conflicts": ["Scared of the dark", "Missed the bus", "Cannot find a toy", "Lost a dog"]
+    }
+  ],
+  "Middle School": [
+    {
+      "Theme": "School & Sports",
+      "Characters": ["Principal", "Teenager", "Coach", "Referee", "Camp Counselor", "Parent"],
+      "Settings": ["Sports Field", "Principal's Office", "Summer Camp", "Swimming Pool", "Skate Park"],
+      "Conflicts": ["Lost the game", "Caught cheating", "Argued with a best friend", "Ruined a borrowed shirt", "Gave wrong directions"]
+    },
+    {
+      "Theme": "Shopping & Lifestyle",
+      "Characters": ["Store Manager", "Teenager", "Hairdresser", "Parent", "Delivery Driver", "Security Guard"],
+      "Settings": ["Shopping Mall", "Hair Salon", "Fast Food Restaurant", "Movie Theater", "Concert Hall"],
+      "Conflicts": ["Sold out tickets", "Got a bad haircut", "Dropped food on the floor", "Lost a wallet", "Argued with a best friend"]
+    },
+    {
+      "Theme": "Home & Tech",
+      "Characters": ["YouTuber", "Gamer", "Teenager", "Parent", "Mechanic"],
+      "Settings": ["Living Room", "Arcade", "Garage", "Library", "City Bus"],
+      "Conflicts": ["Broken phone", "Missed curfew", "Game crashed before saving", "Locked out of the house", "Forgot a birthday", "Missed the train"]
+    }
+  ],
+  "High School": [
+    {
+      "Theme": "Workplace & Corporate",
+      "Characters": ["Boss", "Co-worker", "Job Interviewer", "Scientist", "Artist"],
+      "Settings": ["Corporate Office", "Tech Startup", "Laboratory", "Bank", "Art Gallery"],
+      "Conflicts": ["Underqualified candidate", "Fired from a job", "Deal fell through", "Found a major bug in code", "Misplaced important documents"]
+    },
+    {
+      "Theme": "Law & Public Life",
+      "Characters": ["Politician", "Lawyer", "Judge", "Angry Customer", "Real Estate Agent", "Landlord"],
+      "Settings": ["Courtroom", "Press Conference", "Historic Museum", "Apartment Building"],
+      "Conflicts": ["Caught in a scandal", "Accused of a crime", "Eviction notice", "Misplaced important documents", "Lost the election", "Leaking roof"]
+    },
+    {
+      "Theme": "Travel & Services",
+      "Characters": ["Flight Attendant", "Tour Guide", "Driving Instructor", "College Admissions Officer", "Landlord"],
+      "Settings": ["Airport", "Subway Station", "Busy Restaurant", "Driving Test", "Hotel Lobby", "University Campus"],
+      "Conflicts": ["Terrible service", "Lost passport", "Failed a driving test", "Flight cancelled", "Identity stolen", "Leaking roof"]
+    }
+  ]
 }

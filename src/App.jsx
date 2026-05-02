@@ -5,13 +5,13 @@ function App() {
   const [level, setLevel] = useState('Elementary');
   const [isSpinning, setIsSpinning] = useState(false);
   const [scenario, setScenario] = useState(null);
-  const [spinDisplay, setSpinDisplay] = useState({ character: '', setting: '', conflict: '' });
+  const [spinDisplay, setSpinDisplay] = useState({ character1: '', character2: '', setting: '', conflict: '', theme: '' });
 
   // Handle Level Change
   const handleLevelChange = (e) => {
     setLevel(e.target.value);
     setScenario(null); // Reset scenario when level changes
-    setSpinDisplay({ character: '', setting: '', conflict: '' });
+    setSpinDisplay({ character1: '', character2: '', setting: '', conflict: '', theme: '' });
   };
 
   // The Spin Logic
@@ -20,14 +20,17 @@ function App() {
     setIsSpinning(true);
     setScenario(null);
 
-    const currentDict = dictionary[level];
+    const currentThemes = dictionary[level];
     
     // Spinning animation effect: update rapidly
     let intervalId = setInterval(() => {
+      const randomTheme = currentThemes[Math.floor(Math.random() * currentThemes.length)];
       setSpinDisplay({
-        character: currentDict.Characters[Math.floor(Math.random() * currentDict.Characters.length)],
-        setting: currentDict.Settings[Math.floor(Math.random() * currentDict.Settings.length)],
-        conflict: currentDict.Conflicts[Math.floor(Math.random() * currentDict.Conflicts.length)]
+        theme: randomTheme.Theme,
+        character1: randomTheme.Characters[Math.floor(Math.random() * randomTheme.Characters.length)],
+        character2: randomTheme.Characters[Math.floor(Math.random() * randomTheme.Characters.length)],
+        setting: randomTheme.Settings[Math.floor(Math.random() * randomTheme.Settings.length)],
+        conflict: randomTheme.Conflicts[Math.floor(Math.random() * randomTheme.Conflicts.length)]
       });
     }, 100);
 
@@ -35,12 +38,22 @@ function App() {
     setTimeout(() => {
       clearInterval(intervalId);
       
-      const finalCharacter = currentDict.Characters[Math.floor(Math.random() * currentDict.Characters.length)];
-      const finalSetting = currentDict.Settings[Math.floor(Math.random() * currentDict.Settings.length)];
-      const finalConflict = currentDict.Conflicts[Math.floor(Math.random() * currentDict.Conflicts.length)];
+      const finalTheme = currentThemes[Math.floor(Math.random() * currentThemes.length)];
+
+      const chars = [...finalTheme.Characters];
+      const char1Index = Math.floor(Math.random() * chars.length);
+      const finalCharacter1 = chars[char1Index];
+      // Ensure character 2 is different
+      chars.splice(char1Index, 1);
+      const finalCharacter2 = chars.length > 0 ? chars[Math.floor(Math.random() * chars.length)] : finalCharacter1;
+
+      const finalSetting = finalTheme.Settings[Math.floor(Math.random() * finalTheme.Settings.length)];
+      const finalConflict = finalTheme.Conflicts[Math.floor(Math.random() * finalTheme.Conflicts.length)];
       
       setScenario({
-        character: finalCharacter,
+        theme: finalTheme.Theme,
+        character1: finalCharacter1,
+        character2: finalCharacter2,
         setting: finalSetting,
         conflict: finalConflict
       });
@@ -86,13 +99,30 @@ function App() {
 
         {/* Spinning / Result State */}
         {(isSpinning || scenario) && (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+          <div className="w-full flex flex-col items-center">
+            {/* Theme Label */}
+            <div className="mb-6 px-6 py-2 bg-gray-800 rounded-full border border-gray-600 shadow-md transition-all">
+              <span className="text-gray-400 uppercase tracking-widest text-sm font-bold mr-2">Theme:</span>
+              <span className={`text-lg font-bold ${isSpinning ? 'text-gray-300' : 'text-purple-400'}`}>
+                {isSpinning ? spinDisplay.theme : scenario?.theme}
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
             
-            {/* Character Card */}
+              {/* Character 1 Card */}
             <div className="bg-gradient-to-br from-blue-900 to-blue-800 p-8 rounded-3xl shadow-xl border border-blue-600 flex flex-col items-center justify-center min-h-[250px] transform transition-transform hover:scale-105">
-              <h3 className="text-blue-300 uppercase tracking-widest text-sm font-bold mb-4">Character</h3>
+              <h3 className="text-blue-300 uppercase tracking-widest text-sm font-bold mb-4">Character 1</h3>
               <p className={`text-3xl md:text-4xl font-black text-center ${isSpinning ? 'slot-machine-text' : 'text-white'}`}>
-                {isSpinning ? spinDisplay.character : scenario?.character}
+                {isSpinning ? spinDisplay.character1 : scenario?.character1}
+              </p>
+            </div>
+
+            {/* Character 2 Card */}
+            <div className="bg-gradient-to-br from-indigo-900 to-indigo-800 p-8 rounded-3xl shadow-xl border border-indigo-600 flex flex-col items-center justify-center min-h-[250px] transform transition-transform hover:scale-105">
+              <h3 className="text-indigo-300 uppercase tracking-widest text-sm font-bold mb-4">Character 2</h3>
+              <p className={`text-3xl md:text-4xl font-black text-center ${isSpinning ? 'slot-machine-text' : 'text-white'}`}>
+                {isSpinning ? spinDisplay.character2 : scenario?.character2}
               </p>
             </div>
 
@@ -112,6 +142,7 @@ function App() {
               </p>
             </div>
 
+            </div>
           </div>
         )}
       </main>
