@@ -1,0 +1,76 @@
+{
+  "Elementary": {
+    "Characters": [
+      "A friendly alien", "A talking dog", "A brave astronaut", "A magical wizard",
+      "A hungry dinosaur", "A clever detective", "A sleepy bear", "A speedy superhero",
+      "A kind teacher", "A mischievous monkey", "A lost penguin", "A singing mermaid",
+      "A robot who wants to be human", "A pirate looking for treasure", "A ninja in training",
+      "A talking tree", "A curious cat"
+    ],
+    "Settings": [
+      "A spaceship", "A magical forest", "A giant castle", "A busy zoo",
+      "An underwater city", "A secret cave", "A sunny beach", "A treehouse",
+      "A candy factory", "A snowy mountain", "A deserted island", "A floating island in the sky",
+      "A time machine", "A bustling playground", "A hidden garden", "A moon base",
+      "A pirate ship"
+    ],
+    "Conflicts": [
+      "Lost their favorite toy", "Can't find the way home", "Accidentally broke something",
+      "Needs to win a race", "Found a mysterious map", "Trying to reach a high shelf",
+      "Needs help baking a cake", "Trying to wake up a sleepy friend", "Lost their magical powers",
+      "Trying to catch a fast bug", "Needs to build a shelter", "Forgot the password",
+      "Trying to make a new friend", "Scared of the dark", "Trying to cross a river",
+      "Needs to solve a riddle", "Trying to stop a funny hiccup"
+    ]
+  },
+  "Middle School": {
+    "Characters": [
+      "A secret agent", "A young inventor", "A time traveler", "A famous pop star",
+      "A strict principal", "A misunderstood villain", "A sports champion", "A brilliant scientist",
+      "A rookie reporter", "A ghost from the 1800s", "An exchange student from Mars",
+      "A video game character brought to life", "A master thief", "A superhero without powers",
+      "A chef competing in a contest", "A wildlife documentary filmmaker", "A historical figure in the present"
+    ],
+    "Settings": [
+      "A high-tech laboratory", "An abandoned amusement park", "A haunted mansion",
+      "A busy airport", "A virtual reality game", "A crowded shopping mall", "A summer camp",
+      "A space station", "A submarine deep underwater", "A famous museum after hours",
+      "A movie set", "A survival island", "A futuristic city", "An underground bunker",
+      "A magical library", "A school during a blackout", "A concert backstage"
+    ],
+    "Conflicts": [
+      "Discovered a huge secret", "Accidentally swapped bodies", "Needs to defuse a harmless prank bomb",
+      "Trying to escape a locked room", "Lost the winning lottery ticket", "Framed for a crime",
+      "Trying to win a massive competition", "Trapped in a video game", "Trying to find a cure for a weird sickness",
+      "Trying to stop a rumor", "Lost in an unfamiliar city", "Trying to protect a rare animal",
+      "Trying to survive without electricity", "Needs to win back a best friend", "Trying to break a curse",
+      "Trying to get the perfect photo", "Trying to hide a pet alien"
+    ]
+  },
+  "High School": {
+    "Characters": [
+      "A stressed out senior", "An ambitious politician", "A cynical detective", "A wealthy CEO",
+      "A struggling artist", "A brilliant hacker", "An alien undercover as a student",
+      "A renowned chef", "An investigative journalist", "A spy on their last mission",
+      "A professional gamer", "A philosophical AI", "A renowned fashion designer",
+      "A survivor of a dystopian future", "An eccentric billionaire", "A disillusioned hero",
+      "A charismatic cult leader"
+    ],
+    "Settings": [
+      "A high-stakes courtroom", "A remote cabin in the woods", "A bustling newsroom",
+      "A fancy gala", "An international space station", "A dystopian megacity",
+      "A cross-country road trip", "A high-security prison", "A deserted highway diner at 3 AM",
+      "A luxury yacht in a storm", "A highly classified military base", "A chaotic stock exchange floor",
+      "An underwater research facility", "An ancient archaeological dig", "A prestigious university campus",
+      "A corporate boardroom", "A quiet suburban neighborhood with a dark secret"
+    ],
+    "Conflicts": [
+      "Blackmailed with a secret", "Trying to expose corruption", "Trapped with an enemy",
+      "Trying to survive a natural disaster", "Forced to choose between love and career",
+      "Accidentally witnessed a crime", "Trying to clear their name", "Navigating a complex moral dilemma",
+      "Trying to pull off a heist", "Dealing with a betrayal", "Trying to negotiate a hostage situation",
+      "Trying to win a high-stakes bet", "Facing an existential crisis", "Trying to uncover a conspiracy",
+      "Trying to survive a zombie outbreak", "Dealing with a difficult client", "Trying to launch a revolutionary product"
+    ]
+  }
+}
